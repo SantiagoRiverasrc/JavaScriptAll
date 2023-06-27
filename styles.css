@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.proTitle{
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
+.father__color{
+    display: flex;
+    justify-content: center;
+}
+
+.proColor{
+    border-radius: 10px;
+    text-align: center;
+    width: 100vw;
+    max-width: 1050px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+
+.title__color{
+    color: white;
+    padding: 10px;
+    background-color: rgb(40, 39, 39);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+
+.button__color{
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+	background-color:white;
+	border-radius:15px;
+	border:2px solid #333029;
+	cursor:pointer;
+    font-weight: bold;
+	padding:12px 16px;
+	text-decoration:none;
+    transition: 0.7s;
+}
+
+.button__color:hover,
+.button__counter:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.container__counter{
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 10px;
+    height: 70%;
+}
+
+
+.proTitleCounter{
+    font-size: 47px;
+}
+
+.counter__number{
+    font-size: 50px;
+}
+
+
+
+.button__counter{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+	background-color:white;
+	border-radius:15px;
+	border:2px solid #333029;
+	cursor:pointer;
+    font-weight: bold;
+	padding:12px 16px;
+	text-decoration:none;
+    transition: 0.5s;
+
+}
+
