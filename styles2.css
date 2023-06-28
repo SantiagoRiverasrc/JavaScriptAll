@@ -1,0 +1,47 @@
+.container__reviews{
+    margin-top: 4rem;
+}
+
+
+.title__container{
+    display: flex;
+    justify-content: center;
+}
+
+.proTitleReviews{
+    border-bottom: 2px solid rgb(101, 214, 255);
+}
+
+.div__father_reviews{
+    display: flex;
+    justify-content: center;
+}
+
+.div__reviews{
+    width: 100vw;
+    background-color: rgba(215, 215, 215, 0.633);
+    text-align: center;
+    max-width: 800px;
+    padding: 12px;
+    box-shadow: 1px 1px 5px 1px;
+    transition: 0.5s;
+
+}
+
+.img__reviews{
+    width: 100vw;
+    max-width: 120px;
+    max-height: 160px;
+    border-radius: 50%;
+}
+
+.work__reviews{
+    color: rgb(101, 214, 255);
+    text-transform: uppercase;
+}
+
+.paragraph__reviews{
+    line-height: 1.5;
+}
+
+
