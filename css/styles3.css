@@ -1,0 +1,54 @@
+.container__grid__countdown{
+    display: flex;
+    justify-content: center;
+}
+
+.container__grid__countdown h2,h3{
+    margin: 0;
+}
+
+.container__two__countdown{
+    margin-left: 10px;
+}
+
+
+.img__reloj{
+    width: 100vw;
+    max-width: 600px;
+}
+
+
+.list__countdown{
+    display: flex;
+    justify-content: center;
+}
+
+.list__countdown li{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 241, 42);
+    margin: 16px;
+}
+
+
+@media (max-width: 1200px) { 
+    .container__grid__countdown{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (max-width: 500px) { 
+    .list__countdown{
+        flex-direction: column;
+    }
+
+    .list__countdown li{
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}
