@@ -6,10 +6,11 @@
     <title>Only Projects</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/styles2.css">
+    <link rel="stylesheet" href="./css/styles3.css">
 </head>
 <body>
     <h1 class="proTitle">Color Generator</h1>
-    <div class="father__color">
+    <div class="father__color space__container">
         <div class="proColor container">
             <h2 class="title__color">Background Color: White</h2>
             <button class="button__color">Click Me</button>
@@ -17,7 +18,7 @@
     </div>
 
 
-    <section class="container__counter">
+    <section class="container__counter space__container">
         <h1 class="proTitleCounter">Counter</h1>
         <h1 class="counter__number">0</h1>
         <nav class="nav__counter">
@@ -28,7 +29,7 @@
     </section>
 
 
-    <section class="container__reviews">
+    <section class="container__reviews space__container">
         <h1 style="text-align: center;">Carrousel Perfil</h1>
         <div class="title__container">
             <h1 class="proTitleReviews">Our Reviews</h1>
@@ -66,6 +67,38 @@
         </nav>
         
 
+    </section>
+
+
+
+
+
+    <section class="space__container">
+        <h1 style="text-align: center;">Convert Binary to Integer</h1>
+        <form class="form__binary">
+            <input type="number" id="input__binary" placeholder="Binary" onkeypress="return (event.charCode >= 48) &&  (event.charCode <= 49)" required>
+            <br>
+            <button type="submit" class="button__counter">Convert</button>
+        </form>
+
+        <h3 class="integer__binary"></h3>
+    </section>
+
+
+    <section class="space__container">
+        <h1 style="text-align: center;">Countdown</h1>
+        <section class="container__grid__countdown">
+            <div>
+                <img src="./img/reloj.jpg" class="img__reloj" alt="reloj">
+            </div>
+            <div class="container__two__countdown">
+                <h2>OLD RELOJ GIVEAWAY</h2>
+                <h3>Giveaway Ends On Friday, 10 December 2023</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur ex molestias quia, obcaecati nemo ut quibusdam adipisci nisi repellendus sed modi voluptas veritatis hic temporibus, quas fuga aliquam dolores.</p>
+                <ul class="list__countdown">
+                </ul>
+            </div>
+        </section>
     </section>
 
 </body>
