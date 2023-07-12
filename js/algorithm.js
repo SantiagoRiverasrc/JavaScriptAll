@@ -1,7 +1,4 @@
-
-
-/*ALGORITHM OF CHANGE COLOR */
-
+/*ALGORITHM OF CHANGE COLOR ----]*/
 
 
 /*Variables of DOM */
@@ -27,14 +24,7 @@ $buttonChangeColor.addEventListener('click', changeColor);
 
 
 
-
-
-
-
-
-
-
-/*----ALGORITHM OF COUNTER ---*/
+/*----ALGORITHM OF COUNTER ---]*/
 
 
 
@@ -78,27 +68,7 @@ $decreaseCounter.addEventListener('click', decreaseNumber)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*ALGORITH OF CARRUSEL WORK */
+/*ALGORITH OF CARRUSEL WORK  ----------]*/
 
 const $buttonLeft = document.querySelector(".left");
 const $buttonRight = document.querySelector(".right");

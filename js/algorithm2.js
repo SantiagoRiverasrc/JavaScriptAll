@@ -1,10 +1,6 @@
-
-
-//NAVBAR PROJECT
+//NAVBAR PROJECT------------]
 const $buttonMenu = document.querySelector(".logo__menu");
 const $listElements = document.querySelectorAll(".list__nav");
-
-
 
 
 //Function for show the links when click in the button
@@ -21,11 +17,7 @@ $buttonMenu.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-//BINARY TO INTEGER PROJECT
+//BINARY TO INTEGER PROJECT--------]
 
 
 const $formBinary = document.querySelector(".form__binary");
@@ -47,30 +39,7 @@ $formBinary.addEventListener("submit", (e) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//COUNTDOWN
-
-
-
-
-
-
+//COUNTDOWN-------------]
 
 //List where put the datas
 const countdown__datas = document.querySelector(".list__countdown")
@@ -98,3 +67,69 @@ setInterval(() => {
         <li>${seconds}<br><span>SECS</span></li>
     `
 },1000)
+
+
+
+
+
+
+
+
+
+//GENERATOR PARAGRAPH--------]
+
+const inputParagraph = document.querySelector(".input__generator");
+const paragraphResult = document.querySelector(".paragraph");
+const formParagraph = document.querySelector(".form__generator__paragraph");
+
+
+
+async function getDatasApi(number){
+    try{
+        let parrafo = "";
+        const response = await fetch(`https://clientes.api.greenborn.com.ar/public-random-word?c=${number*6}&l=6`);
+
+        if(!response.ok) throw new Error(`Error HTTP: ${response.status}`);
+
+        const data = await response.json();
+        data.forEach(element => {
+            parrafo += element + " ";
+        })
+
+        return parrafo.trimEnd()
+    }catch(error){
+        console.log(error);
+    }
+
+}
+
+
+
+
+
+formParagraph.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let number = parseInt(inputParagraph.value);
+    
+    if(number === 0) paragraphResult.textContent = "Cannot Enter Zero";
+    else if(number > 15) paragraphResult.textContent = "The limit is 15";
+    else{
+        
+        paragraphResult.innerHTML = `<h2>Generator Paragraph...</h2>`
+        const miPromesa = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const resultado = getDatasApi(number);
+                resolve(resultado)
+            },3000)
+        });
+
+        miPromesa.then((result) => {paragraphResult.textContent = result;}
+        ).catch((error) => console.log(error))
+    }
+
+})
+
+
+
+
+

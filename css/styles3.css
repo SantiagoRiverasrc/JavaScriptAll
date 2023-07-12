@@ -1,3 +1,5 @@
+/* COUNTDOWN STYLES*/
+
 .container__grid__countdown{
     display: flex;
     justify-content: center;
@@ -31,6 +33,43 @@
     margin: 16px;
 }
 
+
+
+/*GENERATOR PARAGRAPH STYLES*/
+
+.form__generator__paragraph{
+    text-align: center;
+    padding: 4px;
+
+}
+
+.input__generator{
+    margin-bottom: 17px;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background: rgb(248, 248, 248);
+    white-space: nowrap;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries Countdown*/
 
 @media (max-width: 1200px) { 
     .container__grid__countdown{
